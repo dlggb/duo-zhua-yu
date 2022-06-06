@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 26.67vw;
+}
+
+body {
+  font-size: 0.115rem;
+  display: flex;
+  /* 主轴排序 */
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 0.195rem;
+}
+h2 {
+  font-size: 0.155rem;
+  font-weight: normal;
+}
+h3 {
+  font-size: 0.135rem;
+  font-weight: 500;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 0.115rem;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+b,
+strong,
+i,
+em {
+  font-style: normal;
+  font-weight: normal;
+}
+/* 左右padding */
+.paddingX {
+  padding-left: 0.155rem;
+  padding-right: 0.155rem;
+}
+/* 上边框线 */
+.borderTop {
+  border-top: 1px solid #f2f2f2;
+}
+/* 箭头指示器 */
+.indicatorAfetr {
+  position: relative;
+}
+.indicatorAfetr::after {
+  content: "";
+  width: 0.05rem;
+  height: 0.05rem;
+  position: absolute;
+  top: 0.045rem;
+  left: 0.35rem;
+  border-top: 0.015rem solid #828282;
+  border-left: 0.015rem solid #828282;
+}

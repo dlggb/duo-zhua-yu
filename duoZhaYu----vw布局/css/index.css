@@ -1,0 +1,173 @@
+/* 头部部分 --------------------------*/
+#header {
+  height: 0.66rem;
+  background: #f3fcfb;
+  color: #18c3aa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header div {
+  width: 0.35rem;
+  height: 0.35rem;
+  border: 0.005rem solid #ccc;
+  border-radius: 0.048rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header div img {
+  width: 85%;
+  background: white;
+}
+#header h3 {
+  flex: 1;
+  padding-left: 0.1rem;
+}
+#header a {
+  width: 0.8rem;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  text-align: center;
+  line-height: 0.3rem;
+  background: #18c3aa;
+  color: white;
+}
+
+/* 中间部分 ------------------------------*/
+#main {
+  flex: 1;
+  overflow: auto;
+}
+/* 头部导航 */
+#main .article nav {
+  height: 0.48rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#main .article nav h2 {
+  line-height: 0.48rem;
+  color: #aaaaaa;
+}
+#main .article nav h2.on {
+  border-bottom: 3px solid #333333;
+  color: #333333;
+}
+/* 搜索部分 */
+#main .article .search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.8rem;
+}
+#main .article .search input {
+  height: 0.41rem;
+  width: 3.03rem;
+  font-size: 0.135rem;
+  border-radius: 0.05rem;
+  outline: none;
+  border: 0;
+  padding-left: 0.35rem;
+  background: #f7f7f7 url("../images/search.png") no-repeat 0.05rem/10%;
+}
+#main .article .search a {
+  display: flex;
+  flex-direction: column;
+  margin-left: -0.1rem;
+  align-items: center;
+}
+#main .article .search a i {
+  font-size: 0.225rem;
+}
+/* 内部部分 */
+#main .article .content {
+  display: flex;
+  flex-direction: column;
+}
+/* 内容头部 */
+#main .article .content .content_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .article .content .content_header span {
+  padding-right: 0.12rem;
+}
+#main .article .content .content_header span::after {
+  transform: rotate(135deg);
+}
+/* 内容列表部分 */
+#main .article .content .content_book {
+  display: flex;
+  justify-content: flex-start;
+}
+#main .article .content .content_book figure {
+  width: 0.795rem;
+  height: 1.2rem;
+  margin: 0.185rem 0.115rem 0.185rem 0;
+  box-shadow: 1px 1px 10px #999;
+}
+#main .article .content .content_book figure img {
+  height: 100%;
+}
+#main .article .content .content_book aside {
+  height: 1.2rem;
+  margin: 0.185rem 0.115rem 0.185rem 0;
+}
+#main .article .content .content_book aside h4 {
+  margin-top: 0.095rem;
+  color: #acacac;
+}
+#main .article .content .content_book aside h5 {
+  margin-top: 0.095rem;
+  color: #d6ba8c;
+}
+#main .article .content .content_book aside h3 {
+  margin-top: 0.3rem;
+}
+#main .article .content .content_book aside h3 span {
+  border: 0.01rem solid #d6ba8c;
+  padding: 0 0.05rem 0 0.05rem;
+  height: 0.685rem;
+  margin-left: 0.025rem;
+  border-radius: 0.025rem;
+  font-size: 0.11rem;
+  color: #d6ba8c;
+}
+/* 内容底部 */
+#main .article .content .content_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 0.3rem;
+  height: 0.695rem;
+  border-bottom: 0.155rem solid #f2f2f2;
+}
+#main .article .content .content_footer::after {
+  top: 0.21rem;
+  left: 2.1rem;
+  transform: rotate(-135deg);
+}
+#main .article .content:last-child .content_footer {
+  border-bottom: 0.155rem solid white;
+}
+/* 底部部分 ------------------------------*/
+#footer {
+  height: 0.515rem;
+  display: flex;
+  justify-content: space-around;
+}
+#footer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#footer a i {
+  font-size: 0.225rem;
+}
+#footer a.on {
+  color: #497749;
+}
